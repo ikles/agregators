@@ -1,0 +1,124 @@
+<div class="events__revs" id="reviews">
+                <div class="h3">Отзывы (2)</div>
+
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__avatar"><img src="img/ava.svg"></div>
+                    <div class="reviews__name">Мария</div>
+                    <div class="reviews__date">19.11.22</div>
+                  </div>
+                  <p class="reviews__text">Идеальный рынок для опта. Если потерпеть постоянный кипешь, который присущ садоводу, можно очень продуктивно съездить и закупиться.</p>
+                  <div class="reviews__actions">
+                    <a href="" class="reviews__like reviews__action">
+                      <span>0</span>
+                      <span class="comment__icon"><img src="img/like-1.svg"></span>
+                    </a>
+                    <a href="" class="reviews__dislike reviews__action">
+                      <span>2</span>
+                      <span class="comment__icon"><img src="img/like-2.svg"></span>
+                    </a>
+                    <a href="" class="reviews__answer">ответить</a>
+                  </div>
+                </div>
+
+                <div class="reviews__item">
+                  <div class="reviews__top">
+                    <div class="reviews__avatar"><img src="img/ava.svg"></div>
+                    <div class="reviews__name">Мария</div>
+                    <div class="reviews__date">19.11.22</div>
+                  </div>
+                  <p class="reviews__text">Здравствуйте! Продаются ли на этом рынке детские кроватки и коляски?</p>
+                  <div class="reviews__actions">
+                    <a href="" class="reviews__like reviews__action">
+                      <span>0</span>
+                      <span class="comment__icon"><img src="img/like-1.svg"></span>
+                    </a>
+                    <a href="" class="reviews__dislike reviews__action">
+                      <span>2</span>
+                      <span class="comment__icon"><img src="img/like-2.svg"></span>
+                    </a>
+                    <a href="" class="reviews__answer">ответить</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <form class="add-quest__form">
+                  <div class="add-quest__row">
+                    <label class="add-quest__col">
+                      <div class="add-quest__label">Имя</div>
+                      <input class="add-quest__input" type="text" placeholder="">
+                    </label>
+                    <label class="add-quest__col">
+                      <div class="add-quest__label">Email</div>
+                      <input class="add-quest__input" type="text" placeholder="">
+                    </label>
+                  </div>
+                  <label class="add-quest__area-w">
+                    <div class="add-quest__label">Отзыв</div>                      
+                    <textarea class="add-quest__area" placeholder=""></textarea>
+                  </label>
+                  <div class="add-quest__rules">Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a></div>
+                  <div class="add-quest__robot">
+                    <img src="img/robot.jpg">
+                  </div>
+                  <button class="add-quest__btn">Отправить</button>
+                </form>
+
+
+                                <div class="faq">
+                  <div class="h3">Часто задаваемые вопросы</div>
+
+                  <div class="accordion-container"> 
+                    <div class="accordion-item">
+                      <div class="accordion-header active-header">Указана неверная/неполная информация о площадке. Как изменить?</div>
+                      <div class="accordion-content">
+                        Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header">Почему моего населенного пункта нет в списке?</div>
+                      <div class="accordion-content">
+                        Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+                      </div>
+                    </div><!--item-->
+                    <div class="accordion-item">
+                      <div class="accordion-header">Почему моего населенного пункта нет в списке?</div>
+                      <div class="accordion-content">
+                        Обработка персональных данных – любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+                      </div>
+                    </div><!--item-->
+                  </div>
+                </div>
+
+                <div class="add-quest">
+                  <div class="h3">Задать вопрос</div>
+                  <form class="add-quest__form">
+                    <div class="add-quest__row">
+                      <label class="add-quest__col">
+                        <div class="add-quest__label">Имя</div>
+                        <input class="add-quest__input" type="text" placeholder="" />
+                      </label>
+                      <label class="add-quest__col">
+                        <div class="add-quest__label">Email</div>
+                        <input class="add-quest__input" type="text" placeholder="" />
+                      </label>
+                    </div>
+                    <div class="add-quest__row">
+                      <label class="add-quest__col-100">
+                        <div class="add-quest__label">Тема</div>
+                        <input class="add-quest__input" type="text" placeholder="" />
+                      </label>
+                    </div>
+                    <label class="add-quest__area-w">
+                      <div class="add-quest__label">Текст сообщения</div>                      
+                      <textarea class="add-quest__area" placeholder=""></textarea>
+                    </label>
+                    <div class="add-quest__rules">Нажимая кнопку "Отправить", Вы соглашаетесь с <a href="">правилами сайта</a></div>
+                    <div class="add-quest__robot">
+                      <img src="img/robot.jpg" />
+                    </div>
+                    <button class="add-quest__btn">Отправить</button>
+                  </form>
+                </div>
