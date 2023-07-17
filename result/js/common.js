@@ -53,20 +53,18 @@ jQuery(document).ready(function( $ ) {
 
 
 
-
-
-
-/*$('.top__slider').slick({
-  infinite: true,    
-  speed: 6000,
-  slidesToScroll: 1,
-  autoplay: false,    
-  slidesToShow: 1,
-  cssEase: 'linear',  
-  autoplaySpeed: 0,  
-  arrows: true,
-  pauseOnHover: true,  
-});*/
+  $('.popular__slider').slick({
+    infinite: true,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 3,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: true,
+    dots: true,
+    pauseOnHover: true,  
+  });
 
 
 
