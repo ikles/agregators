@@ -42,61 +42,228 @@
         </div>
       </div>
       <section class="popular">
-        <div class="contain">
+        <div class="contain popular__contain">
           <div class="h2">Популярные площадки</div>
-          <div class="popular__slider">
-            <div class="pop__col">
-              @@include('var/_pop__item.html',{
-                "title":"Supl.biz",
-                "text":"Международная торговая площадка для оптовых покупателей и продавцов.",
-                "top":"12",
-                "img":"img/pop-1.png",
-                "rank":"367.4",
-                "ya":"820"
-              })
+
+          <div class="swiper-container popular__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">              
+                @@include('var/_pop__item.html',{
+                  "title":"Supl.biz",
+                  "text":"Международная торговая площадка для оптовых покупателей и продавцов.",
+                  "top":"12",
+                  "img":"img/pop-1.png",
+                  "rank":"367.4",
+                  "ya":"820"
+                })            
+              </div>
+              <div class="swiper-slide">
+                @@include('var/_pop__item.html',{
+                  "title":"Supl.biz",
+                  "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
+                  "top":"12",
+                  "img":"img/pop-2.png",
+                  "rank":"437.1",
+                  "ya":"2160"
+                })      
+              </div>      
+              <div class="swiper-slide">
+                @@include('var/_pop__item.html',{
+                  "title":"Supl.biz",
+                  "text":"Продукты питания и бытовая химия и другие товары оптом от проверенных поставщиков и дистрибьюторов на ...",
+                  "top":"12",
+                  "img":"img/pop-3.png",
+                  "rank":"367.4",
+                  "ya":"820"
+                })     
+              </div>       
+              <div class="swiper-slide">
+                @@include('var/_pop__item.html',{
+                  "title":"Supl.biz",
+                  "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
+                  "top":"12",
+                  "img":"img/pop-2.png",
+                  "rank":"437.1",
+                  "ya":"2160"
+                })    
+              </div>
+              <div class="swiper-slide">
+                @@include('var/_pop__item.html',{
+                  "title":"Supl.biz",
+                  "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
+                  "top":"12",
+                  "img":"img/pop-2.png",
+                  "rank":"437.1",
+                  "ya":"2160"
+                })             
+              </div>
             </div>
-            <div class="pop__col">
-              @@include('var/_pop__item.html',{
-                "title":"Supl.biz",
-                "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
-                "top":"12",
-                "img":"img/pop-2.png",
-                "rank":"437.1",
-                "ya":"2160"
-              })
+
+            <div class="swiper__controls">
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button swiper-button-next"></div>
             </div>
-            <div class="pop__col">
-              @@include('var/_pop__item.html',{
-                "title":"Supl.biz",
-                "text":"Продукты питания и бытовая химия и другие товары оптом от проверенных поставщиков и дистрибьюторов на ...",
-                "top":"12",
-                "img":"img/pop-3.png",
-                "rank":"367.4",
-                "ya":"820"
-              })
-            </div>
-            <div class="pop__col">
-              @@include('var/_pop__item.html',{
-                "title":"Supl.biz",
-                "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
-                "top":"12",
-                "img":"img/pop-2.png",
-                "rank":"437.1",
-                "ya":"2160"
-              })
-            </div>
-          </div>
+
+          </div>              
+
+          
 
 
+          <a class="all-link" href="">Все площадки</a>
         </div>
       </section>
-      
-    </main>
-    @@include('var/_footer.html')
+      <section class="categs">
+        <div class="categs__contain contain">
+          <div class="h2">Категории</div>
+          <div class="categories__row">
+           <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-1.png",
+              "title":"Мультитоварные площадки",
+              "num":""
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-2.png",
+              "title":"Автозапчасти",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-3.png",
+              "title":"Железнодорожная продукция",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-4.png",
+              "title":"Зоотовары",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-5.png",
+              "title":"Мебель",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-6.png",
+              "title":"Медицинские товары",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-7.png",
+              "title":"Одежда и обувь",
+              "num":"(32)"
+            })                
+          </div>
+          <div class="categories__col">
+            @@include('var/_categories__item.html',{
+              "img":"img/cat-8.png",
+              "title":"Подарки и сувениры",
+              "num":"(32)"
+            })                
+          </div>
+        </div>
+        <a class="all-link" href="">Все категории</a>
+      </div>
+    </section>
+    <section class="platforms">
+      <div class="platforms__contain contain">
+        <div class="h2">Сравнение площадок</div>
+        <div class="swiper-container platforms__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             @@include('var/_platforms__item.html',{
+              "img":"img/pop-1.png",
+              "pic":"img/platform-3.png",
+              "text":"Supl.biz и Qoovee"
+            })        
+          </div>
+          <div class="swiper-slide">
+            @@include('var/_platforms__item.html',{
+              "img":"img/platform-1.png",
+              "pic":"img/platform-4.png",
+              "text":"Ozon и Wildberries"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('var/_platforms__item.html',{
+              "img":"img/platform-2.png",
+              "pic":"img/platform-5.png",
+              "text":"Jey Today и Пульс цен"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('var/_platforms__item.html',{
+              "img":"img/platform-1.png",
+              "pic":"img/platform-4.png",
+              "text":"Ozon и Wildberries"
+            })
+          </div>
+          <div class="swiper-slide">
+            @@include('var/_platforms__item.html',{
+              "img":"img/platform-2.png",
+              "pic":"img/platform-5.png",
+              "text":"Jey Today и Пульс цен"
+            })
+          </div>
+        </div>
+        <div class="swiper__controls">
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button swiper-button-next"></div>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <section class="articles">
+    <div class="contain">
+      <div class="h2">Статьи</div>
+     <div class="publications__row">
+      <div class="publications__col">
+        @@include('var/_publications__item.html',{
+          "img": "img/publications-1.jpg",
+          "title":"Как работает оптовая торговля, почему она должна жить, и почему — должна умереть.",
+          "date": "2 апреля 2023",
+          "tag": "#лучшее"
+        })
+      </div>
+      <div class="publications__col">
+        @@include('var/_publications__item.html',{
+          "img": "img/publications-2.jpg",
+          "title":"Неочевидные проблемы маркетплейсов",
+          "date": "2 апреля 2023",
+          "tag": "#маркетплейсы"
+        })
+      </div>
+      <div class="publications__col">
+        @@include('var/_publications__item.html',{
+          "img": "img/publications-3.jpg",
+          "title":"Нишевые маркетплейсы. Где еще продавать кроме Wildberries, Ozon и Яндекс Маркета",
+          "date": "2 апреля 2023",
+          "tag": "#бизнесу"
+        })
+      </div>
+    </div>
+    <a href="" class="all-link">Все статьи</a>
   </div>
-  <!--wrapper-->
+</section>
+</main>
+@@include('var/_footer.html')
+</div>
+<!--wrapper-->
 
-  @@include('var/_scripts.html')
+@@include('var/_scripts.html')
 </body>
 
 </html>

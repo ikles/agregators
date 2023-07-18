@@ -10,10 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/select2.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,11 +66,13 @@
         </div>
       </div>
       <section class="popular">
-        <div class="contain">
+        <div class="contain popular__contain">
           <div class="h2">Популярные площадки</div>
-          <div class="popular__slider">
-            <div class="pop__col">
-              <div class="pop__item">
+
+          <div class="swiper-container popular__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">              
+                <div class="pop__item">
   <a href=""><img src="img/pop-1.png" /></a>
   <div class="pop__content">
     <div class="pop__header">
@@ -93,10 +95,10 @@
       </div>
     </div>
   </div>
-</div>
-            </div>
-            <div class="pop__col">
-              <div class="pop__item">
+</div>            
+              </div>
+              <div class="swiper-slide">
+                <div class="pop__item">
   <a href=""><img src="img/pop-2.png" /></a>
   <div class="pop__content">
     <div class="pop__header">
@@ -119,10 +121,10 @@
       </div>
     </div>
   </div>
-</div>
-            </div>
-            <div class="pop__col">
-              <div class="pop__item">
+</div>      
+              </div>      
+              <div class="swiper-slide">
+                <div class="pop__item">
   <a href=""><img src="img/pop-3.png" /></a>
   <div class="pop__content">
     <div class="pop__header">
@@ -145,10 +147,10 @@
       </div>
     </div>
   </div>
-</div>
-            </div>
-            <div class="pop__col">
-              <div class="pop__item">
+</div>     
+              </div>       
+              <div class="swiper-slide">
+                <div class="pop__item">
   <a href=""><img src="img/pop-2.png" /></a>
   <div class="pop__content">
     <div class="pop__header">
@@ -171,16 +173,262 @@
       </div>
     </div>
   </div>
-</div>
+</div>    
+              </div>
+              <div class="swiper-slide">
+                <div class="pop__item">
+  <a href=""><img src="img/pop-2.png" /></a>
+  <div class="pop__content">
+    <div class="pop__header">
+      <a href="" class="pop__mame">Supl.biz</a>
+      <a href="">7 отзывов</a>
+    </div>
+    <p>Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.</p>
+    <div class="pop__stat">
+      <div>
+        <img src="img/head-cup.svg" />
+        <span>12</span>
+      </div>
+      <div>
+        <img src="img/stat-1.svg" />
+        <span>437.1</span>
+      </div>
+      <div>
+        <img src="img/stat-2.svg" />
+        <span>2160</span>
+      </div>
+    </div>
+  </div>
+</div>             
+              </div>
             </div>
-          </div>
+
+            <div class="swiper__controls">
+              <div class="swiper-button swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button swiper-button-next"></div>
+            </div>
+
+          </div>              
+
+          
 
 
+          <a class="all-link" href="">Все площадки</a>
         </div>
       </section>
-      
-    </main>
-    <footer class="footer">  
+      <section class="categs">
+        <div class="categs__contain contain">
+          <div class="h2">Категории</div>
+          <div class="categories__row">
+           <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-1.png" alt="">
+  </span>
+  <div>
+    <p>Мультитоварные площадки <span></span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-2.png" alt="">
+  </span>
+  <div>
+    <p>Автозапчасти <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-3.png" alt="">
+  </span>
+  <div>
+    <p>Железнодорожная продукция <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-4.png" alt="">
+  </span>
+  <div>
+    <p>Зоотовары <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-5.png" alt="">
+  </span>
+  <div>
+    <p>Мебель <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-6.png" alt="">
+  </span>
+  <div>
+    <p>Медицинские товары <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-7.png" alt="">
+  </span>
+  <div>
+    <p>Одежда и обувь <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+          <div class="categories__col">
+            <a href="" class="categories__item">
+  <span>
+    <img src="img/cat-8.png" alt="">
+  </span>
+  <div>
+    <p>Подарки и сувениры <span>(32)</span></p>
+  </div>
+</a>                
+          </div>
+        </div>
+        <a class="all-link" href="">Все категории</a>
+      </div>
+    </section>
+    <section class="platforms">
+      <div class="platforms__contain contain">
+        <div class="h2">Сравнение площадок</div>
+        <div class="swiper-container platforms__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <div class="platforms__item">
+  <span>
+    <a href=""><img src="img/pop-1.png"></a>
+  </span>
+  <span>
+    <a href=""><img src="img/platform-3.png"></a>
+  </span>
+  <p><a href="">Supl.biz и Qoovee</a></p>
+</div>        
+          </div>
+          <div class="swiper-slide">
+            <div class="platforms__item">
+  <span>
+    <a href=""><img src="img/platform-1.png"></a>
+  </span>
+  <span>
+    <a href=""><img src="img/platform-4.png"></a>
+  </span>
+  <p><a href="">Ozon и Wildberries</a></p>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platforms__item">
+  <span>
+    <a href=""><img src="img/platform-2.png"></a>
+  </span>
+  <span>
+    <a href=""><img src="img/platform-5.png"></a>
+  </span>
+  <p><a href="">Jey Today и Пульс цен</a></p>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platforms__item">
+  <span>
+    <a href=""><img src="img/platform-1.png"></a>
+  </span>
+  <span>
+    <a href=""><img src="img/platform-4.png"></a>
+  </span>
+  <p><a href="">Ozon и Wildberries</a></p>
+</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="platforms__item">
+  <span>
+    <a href=""><img src="img/platform-2.png"></a>
+  </span>
+  <span>
+    <a href=""><img src="img/platform-5.png"></a>
+  </span>
+  <p><a href="">Jey Today и Пульс цен</a></p>
+</div>
+          </div>
+        </div>
+        <div class="swiper__controls">
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button swiper-button-next"></div>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <section class="articles">
+    <div class="contain">
+      <div class="h2">Статьи</div>
+     <div class="publications__row">
+      <div class="publications__col">
+        <div class="publications__item">
+  <a href=""><img src="img/publications-1.jpg"></a>
+  <div>2 апреля 2023</div>
+  <p>
+    <a href="">Как работает оптовая торговля, почему она должна жить, и почему — должна умереть. </a>
+  </p>
+  <span>
+    <ul class="publications__tags">
+      <li><a href="">#лучшее</a></li>              
+    </ul>
+    <div>312</div>      
+  </span>
+</div>
+      </div>
+      <div class="publications__col">
+        <div class="publications__item">
+  <a href=""><img src="img/publications-2.jpg"></a>
+  <div>2 апреля 2023</div>
+  <p>
+    <a href="">Неочевидные проблемы маркетплейсов </a>
+  </p>
+  <span>
+    <ul class="publications__tags">
+      <li><a href="">#маркетплейсы</a></li>              
+    </ul>
+    <div>312</div>      
+  </span>
+</div>
+      </div>
+      <div class="publications__col">
+        <div class="publications__item">
+  <a href=""><img src="img/publications-3.jpg"></a>
+  <div>2 апреля 2023</div>
+  <p>
+    <a href="">Нишевые маркетплейсы. Где еще продавать кроме Wildberries, Ozon и Яндекс Маркета </a>
+  </p>
+  <span>
+    <ul class="publications__tags">
+      <li><a href="">#бизнесу</a></li>              
+    </ul>
+    <div>312</div>      
+  </span>
+</div>
+      </div>
+    </div>
+    <a href="" class="all-link">Все статьи</a>
+  </div>
+</section>
+</main>
+<footer class="footer">  
   <div class="contain">
     <div class="footer__row">
       <div class="footer__col">
@@ -200,13 +448,14 @@
   </div>
 </footer>
 
-  </div>
-  <!--wrapper-->
+</div>
+<!--wrapper-->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 

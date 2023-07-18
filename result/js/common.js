@@ -53,8 +53,8 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('.popular__slider').slick({
-    infinite: true,    
+/*  $('.popular__slider').slick({
+    infinite: false,    
     speed: 600,
     slidesToScroll: 1,
     autoplay: false,    
@@ -64,10 +64,135 @@ jQuery(document).ready(function( $ ) {
     arrows: true,
     dots: true,
     pauseOnHover: true,  
-  });
+  });*/
+/*
+   $('.platforms__slider').slick({
+    infinite: false,    
+    speed: 600,
+    slidesToScroll: 1,
+    autoplay: false,    
+    slidesToShow: 3,
+    cssEase: 'linear',  
+    autoplaySpeed: 0,  
+    arrows: true,
+    dots: true,
+    pauseOnHover: true,  
+  });*/
 
 
 
+  if ( $('.platforms__slider').length ) {
+    new Swiper('.platforms__slider', {
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+        draggable: true
+      },
+      slidesPerView: 3, 
+      speed: 600,          
+//перетаскивание на пк
+      simulateTouch: true,
+//чувствительность свайпа
+      touchRatio: 2,
+//угол срабатывания свайпа
+      touchAngle: 45,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        1199: {
+          watchSlidesProgress: true,
+          slidesPerView: 3, 
+          spaceBetween: 0,
+          loop: false,
+        },
+
+        200: {   
+          slidesPerView: 1,           
+        },
+      },
+
+    });
+  }
+
+  if ( $('.popular__slider').length ) {
+    new Swiper('.popular__slider', {
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+//перетаскивать скролл мышью
+        draggable: true
+      },
+      slidesPerView: 3,
+      speed: 600,
+//перетаскивание на пк
+      simulateTouch: true,
+//чувствительность свайпа
+      touchRatio: 2,      
+      watchSlidesVisibility: true,
+//угол срабатывания свайпа
+      touchAngle: 45,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        1199: {
+          watchSlidesProgress: true,
+          slidesPerView: 3, 
+          spaceBetween: 0,
+          loop: false,
+        },
+
+        200: {   
+          slidesPerView: 1, 
+          spaceBetween: 0,
+          loop: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          }
+        },
+      },
+
+    });
+  }
+
+$('.show-more').click(function (e) {
+  e.preventDefault();
+  $(this).closest('td').find('.hide').addClass('show');
+  $(this).hide();
+});
+
+  function showHide(elem) {
+    let block = $(elem);    
+    var button = block.find('.toggle');
+    button.html(button.data('text'));
+    button.click(function(e){
+      e.preventDefault();      
+      let desc = $(this).prev();      
+      desc.toggleClass('more');
+      var swap = $(this).data('swap');
+      var text = $(this).data('text');
+      $(this).data('text', swap);
+      $(this).data('swap', text);
+      $(this).html(swap);
+    });
+  }
+
+  showHide('.description');
 
 /************************************/
 
