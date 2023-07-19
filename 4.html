@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. Товарные агрегаторы</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="inner-page">
+        <div class="contain">
+          <h1>Товарные агрегаторы</h1>
+          <div class="row row-inverse row-filter">
+            <div class="col-1">
+
+              <form class="lfilter">
+                <div class="lfilter__item">
+                  <p>Тип площадки</p>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Маркетплейс</div>
+                  </label>
+                  <label>
+                    <input type="checkbox" checked>
+                    <span></span>
+                    <div>Торговая площадка</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Доска объявлений</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>Портал</div>
+                  </label>
+                </div>
+                <div class="lfilter__item">
+                  <p>Сегмент</p>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>B2B</div>
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <div>B2C</div>
+                  </label>
+                </div>
+                <div class="lfilter__item">
+                  <p>Ниша</p>
+                  <select>
+                    <option value="Все площадки">Все площадки</option>
+                    <option value="площадки">площадки</option>
+                  </select>
+                </div>
+                <div class="lfilter__item">
+                  <p>Ключевые слова</p>
+                  <span>в названии или описании площадки</span>
+                  <input type="text" placeholder="металл">
+                </div>
+                <button>Подобрать</button>
+              </div>
+            </form>
+            <div class="col-3">
+
+              <div class="rfilter__top">
+                <p>Найдено 405 площадок</p>
+                <div>
+                  <p>Сортировать</p>
+                  <select>
+                    <option value="По умолчанию">По умолчанию</option>
+                    <option value="По убыванию">По убыванию</option>
+                  </select>
+                </div>
+              </div>
+              @@include('var/_rfilter__item.html',{
+                "check":"<div class='com__mame-check'></div>",
+                "img":"img/com-logo.png",
+                "pic":"img/com.jpg",
+                "txt":"Оптовый маркетплейс, позволяющий поставщикам и производителям размещать свою продукцию, а закупщикам оставлять запросы на поставку",
+                "name":"ОптСбыт.Ру"
+              })
+
+              @@include('var/_rfilter__item.html',{
+                "check":"",
+                "img":"img/com-logo2.jpg",
+                "pic":"img/com-2.jpg",
+                "txt":"Международная торговая площадка для оптовых покупателей и продавцов",
+                "name":"Supl.biz"
+              })
+
+              @@include('var/_rfilter__item.html',{
+                "check":"",
+                "img":"img/com-logo3.jpg",
+                "pic":"img/com-3.jpg",
+                "txt":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга",
+                "name":"ОптЛист"
+              })
+
+              @@include('var/_rfilter__item.html',{
+                "check":"",
+                "img":"img/com-logo4.jpg",
+                "pic":"img/com-4.jpg",
+                "txt":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга",
+                "name":"ОптЛист"
+              })
+
+              <ul class="spagin">                
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul>
+            </div>
+            <!--col-3-->
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>

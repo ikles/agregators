@@ -170,11 +170,11 @@ jQuery(document).ready(function( $ ) {
     });
   }
 
-$('.show-more').click(function (e) {
-  e.preventDefault();
-  $(this).closest('td').find('.hide').addClass('show');
-  $(this).hide();
-});
+  $('.show-more').click(function (e) {
+    e.preventDefault();
+    $(this).closest('td').find('.hide').addClass('show');
+    $(this).hide();
+  });
 
   function showHide(elem) {
     let block = $(elem);    
@@ -196,7 +196,7 @@ $('.show-more').click(function (e) {
 
 /************************************/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -208,7 +208,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /************************************/
 
@@ -289,6 +289,24 @@ imgWrapper.innerHTML = file.name;
       download2(this);
     });
   }
+
+
+
+  
+
+  $(".video_1").fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none',
+    helpers : {
+      media : {}
+    }
+  });
+
+
+  $('.rating__star').click(function () {
+    let starValue = $(this).attr('data-star-value');
+    $(this).parent().attr('data-result-value', starValue);
+  });
 
   $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');

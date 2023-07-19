@@ -5,8 +5,15 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>3. Страница площадки</title>  
-  @@include('var/_styless.html')
+  <title>7. Добавить площадку</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/select2.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -17,7 +24,24 @@
 <body>
 
   <div class="wrapper">
-    @@include('var/_header.html')    
+    <header class="header">
+  <div class="contain">
+    <div class="header__row">
+      <a href="index.html" class="logo">agregators</a>
+      <div class="header__col">
+        <ul>
+          <li><a href="">Категории</a></li>
+          <li><a href="">Подбор площадки</a></li>
+          <li><a href="">Блог</a></li>
+        </ul>
+        <a href="" class="header__promo">Продвижение в агрегаторах</a>
+        <a href="" class="header__top">Топ 100</a>
+        <a href="" class="header__arr"></a>
+        <a href="" class="header__heart"></a>
+      </div>
+    </div>
+  </div>
+</header>    
     <main class="main">
       <div class="prod">
         <div class="contain">
@@ -180,7 +204,7 @@
               <a href="https://www.youtube.com/watch?v=CH6W_rodslA" class="video_1">
                 <img src="img/vid.jpg">
               </a>
-              <p><b>История создания Wikkeo</b></p>
+
             </div>
 
             <div class="pb52">
@@ -257,41 +281,113 @@
           <div class="col-1">
             <div class="h4">Aналоги Wikkeo</div>
             <div class="analogs">
-             @@include('var/_pop__item.html',{
-              "title":"Supl.biz",
-              "text":"Международная торговая площадка для оптовых покупателей и продавцов.",
-              "top":"12",
-              "img":"img/pop-1.png",
-              "rank":"367.4",
-              "ya":"820"
-            })                          
-            @@include('var/_pop__item.html',{
-              "title":"Supl.biz",
-              "text":"Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.",
-              "top":"12",
-              "img":"img/pop-2.png",
-              "rank":"437.1",
-              "ya":"2160"
-            })                    
-            @@include('var/_pop__item.html',{
-              "title":"Supl.biz",
-              "text":"Продукты питания и бытовая химия и другие товары оптом от проверенных поставщиков и дистрибьюторов на ...",
-              "top":"12",
-              "img":"img/pop-3.png",
-              "rank":"367.4",
-              "ya":"820"
-            })     
+             <div class="pop__item">
+  <a href=""><img src="img/pop-1.png" /></a>
+  <div class="pop__content">
+    <div class="pop__header">
+      <a href="" class="pop__mame">Supl.biz</a>
+      <a href="">7 отзывов</a>
+    </div>
+    <p>Международная торговая площадка для оптовых покупателей и продавцов.</p>
+    <div class="pop__stat">
+      <div>
+        <img src="img/head-cup.svg" />
+        <span>12</span>
+      </div>
+      <div>
+        <img src="img/stat-1.svg" />
+        <span>367.4</span>
+      </div>
+      <div>
+        <img src="img/stat-2.svg" />
+        <span>820</span>
+      </div>
+    </div>
+  </div>
+</div>                          
+            <div class="pop__item">
+  <a href=""><img src="img/pop-2.png" /></a>
+  <div class="pop__content">
+    <div class="pop__header">
+      <a href="" class="pop__mame">Supl.biz</a>
+      <a href="">7 отзывов</a>
+    </div>
+    <p>Оптовый портал, который более 11 лет помогает поставщикам и оптовым покупателям находить друг друга.</p>
+    <div class="pop__stat">
+      <div>
+        <img src="img/head-cup.svg" />
+        <span>12</span>
+      </div>
+      <div>
+        <img src="img/stat-1.svg" />
+        <span>437.1</span>
+      </div>
+      <div>
+        <img src="img/stat-2.svg" />
+        <span>2160</span>
+      </div>
+    </div>
+  </div>
+</div>                    
+            <div class="pop__item">
+  <a href=""><img src="img/pop-3.png" /></a>
+  <div class="pop__content">
+    <div class="pop__header">
+      <a href="" class="pop__mame">Supl.biz</a>
+      <a href="">7 отзывов</a>
+    </div>
+    <p>Продукты питания и бытовая химия и другие товары оптом от проверенных поставщиков и дистрибьюторов на ...</p>
+    <div class="pop__stat">
+      <div>
+        <img src="img/head-cup.svg" />
+        <span>12</span>
+      </div>
+      <div>
+        <img src="img/stat-1.svg" />
+        <span>367.4</span>
+      </div>
+      <div>
+        <img src="img/stat-2.svg" />
+        <span>820</span>
+      </div>
+    </div>
+  </div>
+</div>     
           </div>
           <a href="" class="btn-o">Показать все</a>
         </div>
       </div>
     </div>      
   </main>
-  @@include('var/_footer.html')    
+  <footer class="footer">  
+  <div class="contain">
+    <div class="footer__row">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo">agregators</a>
+        <div class="footer__copy">
+          <div>Agregators, 2023</div>
+          <div>Все права защищены</div>
+        </div>
+      </div>
+      <ul class="foot__menu">
+        <li><a href="">Добавить площадку</a></li>
+        <li><a href="">Продвижение в агрегаторах</a></li>
+        <li><a href="">О сайте</a></li>
+        <li><a href="">Правила сайта</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    
 </div>
 <!--wrapper-->
 
-@@include('var/_scripts.html')
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
 
