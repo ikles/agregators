@@ -2139,6 +2139,32 @@ ul.contents {
   display: block;
 }
 
+.compare {
+  table {
+    width: 100%;
+    td {
+      width: 33.33%;
+      padding-right: 15px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+      span {
+        display: block;
+        color: #777;
+      }
+      img {        
+        display: inline-block;
+        margin-left: 4px;
+        margin-top: -4px;
+                flex: none;
+      }
+      &:nth-child(1) {
+        font-weight: 700;
+      }      
+    }
+  }
+}
+
 //2000
 
 @import "_after-styless";
