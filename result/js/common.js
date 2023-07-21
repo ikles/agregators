@@ -176,23 +176,7 @@ jQuery(document).ready(function( $ ) {
     $(this).hide();
   });
 
-  function showHide(elem) {
-    let block = $(elem);    
-    var button = block.find('.toggle');
-    button.html(button.data('text'));
-    button.click(function(e){
-      e.preventDefault();      
-      let desc = $(this).prev();      
-      desc.toggleClass('more');
-      var swap = $(this).data('swap');
-      var text = $(this).data('text');
-      $(this).data('text', swap);
-      $(this).data('swap', text);
-      $(this).html(swap);
-    });
-  }
 
-  showHide('.description');
 
 /************************************/
 
@@ -210,6 +194,22 @@ $('.eye-3').click(function (e) {
 
 /************************************/
 
+
+
+  $('.lfilter__show').click(function () {
+    $(this).toggleClass('open');
+    $('.lfilter').slideToggle();
+  })
+
+  $('.compare__close').click(function () {
+    const num = $(this).closest('td').index();
+    $('.compare table td:nth-child('+(num+1)+')').remove()      
+  });
+
+
+  $('.compare__actions > span').click(function () {
+    $('.compare table').remove();
+  })
 
 
   function popup(openLink, windowEl, closeEl) {  
